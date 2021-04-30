@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+   
+   
+     <bean id="employee" class="com.setter.injection.bean.Employee">
+     
+         <property name="empId" value="E3949"></property>
+         <property name="empName" value="Mr Smith"></property>
+         <property name="designation" value="Software Engineer"></property>
+         <property name="account" ref="account"></property>
+     
+     </bean> 
+     
+     
+      <bean id="account" class="com.setter.injection.bean.Account">
+     
+         <property name="id" value="1029303903"></property>
+         <property name="accountHolderName" value="Mr Smith"></property>
+         <property name="ifscCode" value="SBI000120"></property>
+         <property name="balance" value="40000"></property>
+     
+     </bean> 
+ 
+   
+   
+
+</beans>
